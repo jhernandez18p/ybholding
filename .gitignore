@@ -214,3 +214,15 @@ pip-log.txt
 
 #Mr Developer
 .mr.developer.cfg
+
+
+*/*/*/*/*.pyc
+*/*/*/*.pyc
+*/*/*.pyc
+*/*.pyc
+*.pyc
+
+.env
+/media/*
+*/*.sqlite3
+*/*/migrations/*

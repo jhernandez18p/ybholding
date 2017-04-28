@@ -10,11 +10,9 @@ def home(request):
     return render(request, template, context)
 
 
-# Error views
-"""
-	custom errors
-"""
-def my_custom_bad_request_view(request):
+# custom Error views
+
+def custom_bad_request_view(request):
     """# Custom http 400 error"""
 	# template = 'url_error/frontend/400.html'
     template = 'frontend/index.html'
@@ -25,7 +23,7 @@ def my_custom_bad_request_view(request):
     return render(request, template, context)
 
 
-def my_custom_permission_denied_view(request):
+def custom_permission_denied_view(request):
     """# Custom http 403 error"""
 	# template = 'url_error/frontend/403.html'
     template = 'frontend/index.html'
@@ -36,7 +34,7 @@ def my_custom_permission_denied_view(request):
     return render(request, template, context)
 
 
-def my_custom_page_not_found_view(request):
+def custom_page_not_found_view(request):
     """# Custom http 404 error"""
 	# template = 'url_error/frontend/404.html'
     template = 'frontend/index.html'
@@ -47,7 +45,7 @@ def my_custom_page_not_found_view(request):
     return render(request, template, context)
 
 
-def my_custom_error_view(request):
+def custom_error_view(request):
     """# Custom http 500 error"""
 	# template = 'url_error/frontend/500.html'
     template = 'frontend/index.html'
